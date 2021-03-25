@@ -1,0 +1,14 @@
+
+.searchBox{
+    color: #ABABAB;
+    border:none;
+    font-size: 0.75rem;
+    background: #F2F2F2;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.glass{
+    color: #ABABAB;
+    width: 13px;
+}
