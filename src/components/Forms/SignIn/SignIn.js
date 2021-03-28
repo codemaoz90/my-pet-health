@@ -1,6 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function SignIn() {
 	return (
 		<>
@@ -21,9 +21,7 @@ export default function SignIn() {
 				</Button>
 				<Form.Text style={{ fontSize: "1rem" }} className=" my-5 text-center">
 					Already have an account?
-					<a style={{ cursor: "pointer" }} className=" ml-2 font-weight-bold">
-						Log in here
-					</a>
+					<Link to="/"> Log In </Link>
 				</Form.Text>
 			</Form>
 		</>

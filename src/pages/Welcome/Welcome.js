@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Login from "../../components/Forms/Login/Login";
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 
-const styleBorderProfessional = { borderBottom: "A5D4FB" };
 export default function Welcome() {
 	const [activeKey, setActiveKey] = useState("user");
 	return (

@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 export default function Login({ controlId }) {
 	const colorB = {
@@ -34,9 +35,9 @@ export default function Login({ controlId }) {
 				</p>
 				<p className=" text-center ">
 					Already member?
-					<a className="mx-2" style={colorB}>
-						Create account
-					</a>
+					<Link style={colorB} to="/register">
+						Create Account
+					</Link>
 				</p>
 			</Form>
 		</>
