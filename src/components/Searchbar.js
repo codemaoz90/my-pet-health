@@ -5,11 +5,13 @@ import glass from '../assets/icons/glass.svg'
 
 function Searchbar (){
     return(
-        <Container className="d-flex flex-row searchbar justify-content-between align-items-center m-0 p-0">
-            <Row>
-                <Col>
-                    <input className="searchBox" type="text" placeholder="Search"  />
-                    <Image className="glass" src={glass} alt="glass" /> 
+        <Container className="d-flex flex-row search-box justify-content-start align-items-center">
+            <Row className="m-0">
+                <Col xs md lg={6} className="p-0 align-self-start ">
+                    <input className="search-text" type="text" placeholder="Search"  />
+                </Col>
+                <Col xs md lg={6} className="align-self-end p-0">
+                    <Image className="glass p-0" src={glass} alt="glass" /> 
                 </Col>
             </Row>
         </Container>

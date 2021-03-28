@@ -1,11 +1,17 @@
 
-.searchBox{
+.search-box{
     color: #ABABAB;
     border:none;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     background: #F2F2F2;
     border-radius: 20px;
-    height: 40px;
+    height: 40px; 
+    padding:10px;
+}
+
+.search-text{
+    border:none;
+    background: #F2F2F2;
 }
 
 .glass{

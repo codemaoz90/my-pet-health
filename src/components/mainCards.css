@@ -1,0 +1,20 @@
+.card-vet{
+    font-size:0.625rem;
+}
+
+.vet,.grooming, .consult , .nutrition {
+    width: 30px;
+    border:1px solid black;
+}
+
+.paw{
+    width: 40px;
+}
+
+.checkup-title{
+    font-weight: 700;
+}
+
+.date-title{
+    font-size: 0.6rem;
+}
