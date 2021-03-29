@@ -1,18 +1,36 @@
+/* Pets title */
+.pets-title{
+   font-weight: 800 !important; 
+}
+
+/* Pets cards */
+.pets-card{
+    background-color: none !important;
+}
+
+/* images */
+.kitty,.toby{
+    width: 65px;
+}
+/* text */
+.age, .type{
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+}
+
+.pet-name{
+    font-weight: 700 !important;
+}
+
+.kitty-card, .toby-card{
+    cursor: pointer;
+}
+
+/* Plus button for adding pets */
 .plus-button{
     width: 30px;
     cursor: pointer;
 }
 .plus-button:hover{
    background-color:aqua !important;
-}
-
-.kitty,.toby{
-    width: 65px;
-}
-.age, .type{
-    font-size: 0.85rem !important;
-}
-
-.kitty-card, .toby-card{
-    cursor: pointer;
 }
