@@ -1,13 +1,15 @@
 import React from "react"
 import Landing from "./pages/Landing"
+import Splash from "./pages/Splash"
 
 
 function App(){
 	return (
-	/* 	<Container> */
+		<div>
+			<Splash/>
 			<Landing />
-/* 		</Container>
- */	)	
+		</div>
+	)	
 }
 
 export default App

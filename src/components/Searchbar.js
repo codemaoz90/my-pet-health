@@ -1,20 +1,20 @@
 import React from "react"
 import "../components/searchbar.css"
-import {Container, Col, Row, Image} from "react-bootstrap"
+import {Button, Image, Form, FormControl} from "react-bootstrap"
 import glass from '../assets/icons/glass.svg'
 
 function Searchbar (){
     return(
-        <Container className="d-flex flex-row search-box justify-content-start align-items-center">
-            <Row className="m-0">
-                <Col xs md lg={6} className="p-0 align-self-start ">
-                    <input className="search-text" type="text" placeholder="Search"  />
-                </Col>
-                <Col xs md lg={6} className="align-self-end p-0">
-                    <Image className="glass p-0" src={glass} alt="glass" /> 
-                </Col>
-            </Row>
-        </Container>
+         <Form className="d-flex justify-content-between align-items-center border-0 search-box">
+            <FormControl
+                type="text"
+                placeholder="Search"
+                className="search mr-sm-2 w-95 ml-2 border-0 "
+            />
+            <Button className="glass-btn w-5 " variant="" type="submit">
+                <Image className="glass p-0" src={glass} alt="glass" />
+            </Button>
+        </Form>
     )
 }
 export default Searchbar

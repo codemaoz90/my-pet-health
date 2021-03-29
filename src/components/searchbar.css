@@ -1,7 +1,6 @@
 
 .search-box{
     color: #ABABAB;
-    border:none;
     font-size: 0.9rem;
     background: #F2F2F2;
     border-radius: 20px;
@@ -9,12 +8,21 @@
     padding:10px;
 }
 
-.search-text{
-    border:none;
-    background: #F2F2F2;
+.search{
+    background: #F2F2F2 !important;
+}
+
+.search:focus, 
+.search:active:focus,
+.search.active:focus, 
+.glass-btn:focus, 
+.glass-btn:active:focus,
+.glass-btn.active:focus{
+    outline:none !important;
+    box-shadow:none !important;
 }
 
 .glass{
-    color: #ABABAB;
+    color: #ABABAB !important;
     width: 13px;
 }

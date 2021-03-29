@@ -1,0 +1,18 @@
+.plus-button{
+    width: 30px;
+    cursor: pointer;
+}
+.plus-button:hover{
+   background-color:aqua !important;
+}
+
+.kitty,.toby{
+    width: 65px;
+}
+.age, .type{
+    font-size: 0.85rem !important;
+}
+
+.kitty-card, .toby-card{
+    cursor: pointer;
+}

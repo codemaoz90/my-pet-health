@@ -8,17 +8,17 @@ import MyPets from '../components/MyPets'
 
 function Landing(){
     return(
-        <Container fluid className="landing d-flex flex-column ">
+        <Container fluid className="landing d-flex flex-column justify-content-center ">
             {/* HEADER */}
-            <Row className="user justify-content-center mt-5">
-                <Col xs={10} md lg={4}>
+            <Row className="welcomeUser justify-content-center">
+                <Col xs={10} md lg={4} className="d-flex justify-content-start">
                     <Image className="user" src={user} alt="user" /> 
                 </Col>
             </Row>
 
-            <Row className="welcomeUser justify-content-center mt-5">
-                <Col xs={10} md lg={4} >
-                    <p>Hi <b>James!</b></p> 
+            <Row className="welcomeUser justify-content-center mt-3">
+                <Col xs={10} md lg={4} className="d-flex justify-content-center">
+                    <p >Hi <b>James!</b></p> 
                 </Col>
             </Row>
 
