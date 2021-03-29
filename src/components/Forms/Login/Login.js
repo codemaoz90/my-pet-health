@@ -2,6 +2,9 @@
 import { Form, Button } from "react-bootstrap";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import firebase from "firebase/app";
+import "firebase/auth";
+import { firebaseConfig } from "../../../config/firebase";
 
 export default function Login({ controlId }) {
 	const colorB = {
@@ -9,10 +12,30 @@ export default function Login({ controlId }) {
 		fontWeight: "bold",
 		cursor: "pointer",
 	};
-	console.log(colorB);
+	const onSubmit = (e) => {
+		e.preventDefault();
+
+		const email = e.target[0].value;
+		const password = e.target[1].value;
+		if (!firebase.apps.length) {
+			firebase.initializeApp(firebaseConfig);
+		}
+		firebase
+			.auth()
+			.signInWithEmailAndPassword(email, password)
+			.then((user) => {
+				// Signed in
+				// ...
+				console.log(user);
+			})
+			.catch((error) => {
+				var errorCode = error.code;
+				var errorMessage = error.message;
+			});
+	};
 	return (
 		<>
-			<Form variant="mb-5" className="form">
+			<Form variant="mb-5" className="form" onSubmit={(e) => onSubmit(e)}>
 				<Form.Group controlId={`${controlId}_email`}>
 					<Form.Control type="email" placeholder="Email" />
 				</Form.Group>
