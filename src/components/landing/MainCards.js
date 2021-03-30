@@ -1,10 +1,10 @@
 import React from "react"
-import vet from "../assets/icons/vet.svg"
-import grooming from "../assets/icons/grooming.svg"
-import consult from "../assets/icons/consult.svg"
-import nutrition from "../assets/icons/nutrition.svg"
-import paw from "../assets/icons/paw.svg"
-import "./mainCards.css"
+import vet from "../../assets/icons/vet.svg"
+import grooming from "../../assets/icons/grooming.svg"
+import consult from "../../assets/icons/consult.svg"
+import nutrition from "../../assets/icons//nutrition.svg"
+import paw from "../../assets/icons/paw.svg"
+import "../landing/mainCards.css"
 import {Container, Col, Row, Card, Image} from "react-bootstrap"
 
 function MainCards (){

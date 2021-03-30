@@ -1,7 +1,7 @@
 import React from "react"
-import "../components/searchbar.css"
+import "../landing/searchbar.css"
 import {Button, Image, Form, FormControl} from "react-bootstrap"
-import glass from '../assets/icons/glass.svg'
+import glass from "../../assets/icons/glass.svg"
 
 function Searchbar (){
     return(

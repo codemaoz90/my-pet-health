@@ -2,9 +2,9 @@ import React from 'react'
 import {Container , Row , Col, Image} from "react-bootstrap"
 import "../pages/landing.css"
 import user from "../assets/icons/user.svg"
-import Searchbar from "../components/Searchbar"
-import MainCards from "../components/MainCards"
-import MyPets from '../components/MyPets'
+import Searchbar from "../components/landing/Searchbar"
+import MainCards from "../components/landing/MainCards"
+import LandingPets from "../components/landing/LandingPets"
 
 function Landing(){
     return(
@@ -26,7 +26,7 @@ function Landing(){
                 <Col xs={10} md lg={4}>
                     <Searchbar/>
                     <MainCards/>
-                    <MyPets/>
+                    <LandingPets/>
                 </Col>
             </Row>
 
