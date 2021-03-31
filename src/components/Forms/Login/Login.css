@@ -1,0 +1,61 @@
+/* .nav-tabs {
+	width: 400px;
+	margin-bottom: 10px;
+	border: none;
+}
+.nav-tabs .nav-link {
+	border: none;
+	border-bottom: 2px solid red;
+} */
+:root {
+	--bgcolor: #fbe2b9;
+}
+
+.tab-content {
+	width: 400px;
+}
+.radius {
+	border-radius: 10px;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+.form-control {
+	border-radius: 10px;
+	padding: 1.4rem;
+}
+
+.form .btnUser {
+	color: black;
+	font-weight: 700;
+	border: none;
+	background-color: var(--bgcolor);
+}
+.form .btnUser:active {
+	border: none;
+	outline: 0;
+	color: black !important;
+	background-color: var(--bgcolor) !important;
+}
+.form .btnUser:focus {
+	box-shadow: none !important;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border: 1px solid #ced4da;
+}
+
+/*  Nav tabs */
+.nav-tabs .nav-link {
+	border: 0;
+	color: black;
+}
+
+.nav-tabs .nav-link.activeAnchor {
+	border-bottom: 4px solid #f4c897;
+}
+.nav-tabs .nav-link.activeProf {
+	border-bottom: 4px solid #a5d4fb;
+}
