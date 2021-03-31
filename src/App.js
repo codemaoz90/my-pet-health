@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-import "bootstrap/dist/css/bootstrap.min.css";
-import Welcome from "./pages/Welcome/Welcome";
 
-function App() {
-	return (
-		<div>
-			<Welcome />
-		</div>
-	);
-=======
 import React from "react"
 import Landing from "./pages/Landing"
 import Splash from "./pages/Splash"
@@ -37,13 +27,7 @@ function App(){
                 </Route>
 
             </Switch>  
-        </Router>
-	
-			
-			
-
+        </Router>	
 	)	
->>>>>>> landing
 }
-
 export default App
