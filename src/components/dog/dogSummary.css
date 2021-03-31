@@ -1,0 +1,16 @@
+.toby-summary{
+    border-radius: 10px !important;
+}
+
+.race, .weight , .age , .gender {
+    width: 30px;
+}
+
+.race-card, .weight-card, .age-card , .gender-card {
+    border:none !important;
+}
+
+.pet-text{
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+}

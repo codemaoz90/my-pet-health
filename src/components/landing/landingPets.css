@@ -34,3 +34,8 @@
 .plus-button:hover{
    background-color:aqua !important;
 }
+
+.pet-link{
+    color:#000 !important;
+    text-decoration: none !important;
+}

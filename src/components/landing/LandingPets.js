@@ -27,17 +27,17 @@ function MyPets (){
             <Row className="d-flex justify-content-center align-items-center">
                 <Col>
                     <Card className="toby-card mt-3">
-                        <Link to="/dog">
+                        <Link to="/dog" className="pet-link">
                             <Card.Body>
                                 <Row >
-                                    <Col xs={10} md lg={8}>
+                                    <Col xs={12} md lg={12} className="d-flex justify-content-center mt-2">
                                         <Image className="toby" src={toby} alt="toby" /> 
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col xs={10} md lg={8}className="card-toby mt-3">
                                         <Card.Title className="pet-name mb-0">Toby</Card.Title>
-                                        <Card.Title className="age mb-0">3 years</Card.Title>
+                                        <Card.Title className="age mb-0 pr-0">3 years</Card.Title>
                                         <Card.Title className="type mb-0">Shitzu</Card.Title>
                                     </Col>
                                     <Col xs={2} md lg={4}
@@ -53,10 +53,10 @@ function MyPets (){
 
                 <Col>
                     <Card className="kitty-card mt-3">
-                        <Link to="/cat">
+                        <Link to="/cat" className="pet-link">
                             <Card.Body >
-                                <Row >
-                                    <Col xs={10} md lg={8} >
+                                <Row className="d-flex justify-content-center" >
+                                    <Col xs={10} md lg={8} className="justify-content-center mt-2">
                                         <Image className="kitty" src={kitty} alt="kitty" /> 
                                     </Col>
                                 </Row>
