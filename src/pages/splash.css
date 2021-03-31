@@ -1,0 +1,33 @@
+.splash{
+    height: 100vh;
+}
+
+.logo{
+    width:300px;
+}
+
+.splash-text{
+    font-size: 2.25rem;
+    color: #A5D4FB !important;
+    font-weight: 700;
+}
+
+
+.btn-splash{
+    background-color: #A5D4FB !important;
+    border-radius: 20px !important;
+    border-color:none !important;
+}
+
+.btn-splash:focus, 
+.btn-splash:active:focus,
+.btn-splash.active:focus{
+    outline:none !important;
+    box-shadow:none !important;
+    border-color:none !important;
+}
+
+.btn-splash:hover{
+    background-color: #A5D4FB !important;
+    opacity: 0.3 !important;
+}

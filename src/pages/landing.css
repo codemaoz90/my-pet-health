@@ -1,0 +1,13 @@
+.landing{
+    font-family: 'Gilroy', sans-serif;
+    height:100vh;
+}
+
+.user{
+    width: 30px;
+    cursor: pointer;
+}
+
+.welcomeUser{
+    font-size: 1.875rem;
+}

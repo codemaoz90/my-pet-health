@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'GilroyBold';
+    src:  url('../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Bold.otf') format('otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'GilroyExtraBold';
+    src:  url('../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.otf') format('otf');
+    font-weight: 800;             
+}
+
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Medium.otf') format('otf'); 
+    font-weight: 500;      
+}
+

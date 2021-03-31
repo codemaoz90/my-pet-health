@@ -1,0 +1,26 @@
+/* Options card */
+.vet-card, .grooming-card ,.consult-card ,.nutrition-card{
+    cursor: pointer; 
+}
+
+.vet,.grooming, .consult , .nutrition {
+    width: 30px;
+}
+
+.card-text{
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+}
+
+/* Reminder card */
+.paw{
+    width: 40px;
+}
+.date-title{
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+}
+
+.checkup-title{
+    font-weight: 700 !important;
+}
