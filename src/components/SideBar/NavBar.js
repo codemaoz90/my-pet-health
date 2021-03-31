@@ -1,0 +1,49 @@
+import { useState } from "react";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { SidebarData } from "./SidebarData";
+import "./NavBar.css";
+function NavBar() {
+	const [sidebar, setSidebar] = useState(true);
+
+	const showSidebar = () => setSidebar(!sidebar);
+	console.log(sidebar);
+	return (
+		<nav className={`sideBar ${sidebar ? " menu-active" : "inactive"} `}>
+			<div className="sideBarCloseBtn">
+				{sidebar ? (
+					<AiIcons.AiOutlineClose onClick={showSidebar} />
+				) : (
+					<FaIcons.FaBars onClick={showSidebar} />
+				)}
+			</div>
+			<div className={`profile ${!sidebar ? "hidden" : ""}`}>
+				<div>
+					<img
+						style={{ borderRadius: "50%" }}
+						src="https://picsum.photos/150/150"
+					/>
+				</div>
+				<h3>James</h3>
+			</div>
+			<div className={`sideBar-links ${!sidebar ? "hidden" : ""}`}>
+				{SidebarData.map((item, index) => {
+					return (
+						<div key={index} className={item.cname}>
+							<a href="">
+								{item.title}
+								{item.icon}
+							</a>
+						</div>
+					);
+				})}
+			</div>
+			<button className={`btn-logout ${!sidebar ? "hidden" : ""}`}>
+				<span className="mr-1">Logout</span>
+				<FaIcons.FaSignOutAlt />
+			</button>
+		</nav>
+	);
+}
+
+export default NavBar;
