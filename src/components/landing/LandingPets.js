@@ -1,14 +1,12 @@
 import React from "react"
 import {Container, Col, Row, Card, Image} from "react-bootstrap"
-import female from "../../assets/icons/female.svg"
-import male from "../../assets/icons/male.svg"
 import "../landing/landingPets.css"
 import {Link} from "react-router-dom";
 import toby from "../../assets/photos/toby-profile.png"
 import kitty from "../../assets/photos/kitty-profile.png"
 import { AiFillPlusCircle } from "react-icons/ai";
-// import { IoFemale } from "react-icons/ai";
-// import {IoMale} from "react-icons/ai"
+import { IoFemale } from "react-icons/io5";
+import {IoMale} from "react-icons/io5"
 
 
 function MyPets (){
@@ -45,7 +43,7 @@ function MyPets (){
                                     </Col>
                                     <Col xs={2} md lg={4}
                                         className="card-toby d-flex justify-content-center align-items-center mt-3">
-                                        <Image className="toby-gender" src={male} alt="male" />
+                                        <IoMale size={25} className="toby-gender" alt="male" />
                                     </Col>
                                 </Row>
                             </Card.Body>    
@@ -71,7 +69,7 @@ function MyPets (){
                                     </Col>
                                     <Col xs={2} md lg={4}
                                     className="card-kitty d-flex justify-content-center align-items-center mt-3">
-                                        <Image className="kitty-gender" src={female} alt="female" />
+                                        <IoFemale size={25} className="kitty-gender" alt="female" />
                                     </Col>
                                 </Row>
                             </Card.Body>     

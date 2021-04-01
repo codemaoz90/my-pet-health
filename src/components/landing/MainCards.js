@@ -1,8 +1,9 @@
 import React from "react"
-import vet from "../../assets/icons/vet.svg"
-import grooming from "../../assets/icons/grooming.svg"
-import consult from "../../assets/icons/consult.svg"
-import nutrition from "../../assets/icons//nutrition.svg"
+import {RiScissors2Line} from "react-icons/ri"
+import {BiEnvelope} from "react-icons/bi"
+import {CgPill} from  "react-icons/cg"
+import {BiBone} from "react-icons/bi"
+import {IoPawOutline} from "react-icons/io5"
 import paw from "../../assets/icons/paw.svg"
 import "../landing/mainCards.css"
 import {Container, Col, Row, Card, Image} from "react-bootstrap"
@@ -15,7 +16,7 @@ function MainCards (){
                 <Col className="d-flex flex-column justify-content-center align-items-center pl-0">
                     <Card className="vet-card">
                         <Card.Body>
-                        <Image className="vet" src={vet} alt="vet" />   
+                            <CgPill size={25} className="vet" alt="vet" />   
                         </Card.Body>
                     </Card>
                     <Card.Title className="card-text mt-2 mb-0">Vet</Card.Title>
@@ -24,7 +25,7 @@ function MainCards (){
                 <Col className="d-flex flex-column justify-content-center align-items-center">
                     <Card className="grooming-card">
                         <Card.Body>
-                        <Image className="grooming" src={grooming} alt="grooming"/>                         
+                        <RiScissors2Line size={25} className="grooming" alt="grooming"/>
                         </Card.Body>
                     </Card>
                     <Card.Title className="card-text mt-2 mb-0">Grooming</Card.Title>
@@ -33,7 +34,7 @@ function MainCards (){
                 <Col className="d-flex flex-column justify-content-center align-items-center">
                     <Card className="consult-card">
                         <Card.Body>
-                            <Image className="consult" src={consult} alt="consult" />   
+                            <BiEnvelope size={25} className="consult" alt="consult" />   
                         </Card.Body>
                     </Card>
                     <Card.Title className="card-text mt-2 mb-0">Consult</Card.Title>
@@ -42,7 +43,7 @@ function MainCards (){
                 <Col className="d-flex flex-column justify-content-center align-items-center pr-0">
                     <Card className="nutrition-card">
                         <Card.Body>
-                            <Image className="nutrition" src={nutrition} alt="nutrition" />   
+                            <BiBone size={25} className="nutrition" alt="nutrition" />   
                         </Card.Body>
                     </Card>
                     <Card.Title className="card-text mt-2 mb-0">Nutrition</Card.Title>
@@ -59,8 +60,8 @@ function MainCards (){
                                     <Card.Title className="checkup-title mb-0">Toby Health Checkup </Card.Title>
                                     <Card.Title className="date-title mt-2 mb-0">09:00 AM  ·  14 July, 2021</Card.Title>
                                 </Col>
-                                <Col xs={2} md lg={4} className="d-flex justify-content-end"> 
-                                    <Image className="paw" src={paw} alt="paw" /> 
+                                <Col xs={2} md lg={4} className="d-flex justify-content-end align-items-center"> 
+                                    <IoPawOutline size={30} className="paw" alt="paw" /> 
                                 </Col>
                             </Row>
                         </Card.Body>

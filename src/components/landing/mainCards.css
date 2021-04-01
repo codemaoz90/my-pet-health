@@ -10,10 +10,6 @@
     
 }
 
-.vet,.grooming, .consult , .nutrition {
-    width: 30px;
-}
-
 .card-text{
     font-size: 0.9rem !important;
     font-weight: 700 !important;
@@ -29,7 +25,6 @@
 }
 
 .paw{
-    width: 40px;
     color: #ffff !important;
 }
 .date-title{
