@@ -1,7 +1,7 @@
 import React from "react"
 import {Container , Row , Col, Image, Card} from "react-bootstrap"
 import arrow from "../../src/assets/icons/cross.svg"
-import kitty from "../../src/assets/icons/kitty.svg"
+import kitty from "../../src/assets/photos/kitty-profile.png"
 import "../pages/cat.css"
 import CatSummary from "../components/cat/CatSummary"
 import CatMedical from "../components/cat/CatMedical"

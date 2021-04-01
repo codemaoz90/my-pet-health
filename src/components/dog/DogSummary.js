@@ -17,7 +17,7 @@ function DogSummary (){
                             <Card.Body>
                                 <Image className="race" src={race} alt="race" />   
                             </Card.Body>
-                            <Card.Title className="pet-text">Shitzu</Card.Title>
+                            <Card.Title className="pet-text">Pug</Card.Title>
                         </Card>
                     </Col>
 

@@ -1,12 +1,13 @@
 import React from "react"
 import {Container, Col, Row, Card, Image} from "react-bootstrap"
-import toby from "../../assets/icons/toby.svg"
-import kitty from "../../assets/icons/kitty.svg"
 import plus from "../../assets/icons/plus.svg"
 import female from "../../assets/icons/female.svg"
 import male from "../../assets/icons/male.svg"
 import "../landing/landingPets.css"
 import {Link} from "react-router-dom";
+import toby from "../../assets/photos/toby-profile.png"
+import kitty from "../../assets/photos/kitty-profile.png"
+
 
 function MyPets (){
     return(
@@ -32,13 +33,14 @@ function MyPets (){
                                 <Row >
                                     <Col xs={12} md lg={12} className="d-flex justify-content-center mt-2">
                                         <Image className="toby" src={toby} alt="toby" /> 
+                                        {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col xs={10} md lg={8}className="card-toby mt-3">
                                         <Card.Title className="pet-name mb-0">Toby</Card.Title>
                                         <Card.Title className="age mb-0 pr-0">3 years</Card.Title>
-                                        <Card.Title className="type mb-0">Shitzu</Card.Title>
+                                        <Card.Title className="type mb-0">Pug</Card.Title>
                                     </Col>
                                     <Col xs={2} md lg={4}
                                         className="card-toby d-flex justify-content-center align-items-center mt-3">
@@ -64,7 +66,7 @@ function MyPets (){
                                     <Col xs={10} md lg={8}className="card-kitty mt-3">
                                         <Card.Title className="pet-name mb-0">Kitty</Card.Title>
                                         <Card.Title className="age mb-0">5 years</Card.Title>
-                                        <Card.Title className="type mb-0">Sphynx</Card.Title>
+                                        <Card.Title className="type mb-0">Korat</Card.Title>
                                     </Col>
                                     <Col xs={2} md lg={4}
                                     className="card-kitty d-flex justify-content-center align-items-center mt-3">

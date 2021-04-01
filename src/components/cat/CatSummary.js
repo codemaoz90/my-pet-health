@@ -17,7 +17,7 @@ function CatSummary (){
                             <Card.Body>
                                 <Image className="race" src={race} alt="race" />   
                             </Card.Body>
-                            <Card.Title className="pet-text">Shitzu</Card.Title>
+                            <Card.Title className="pet-text">Korat</Card.Title>
                         </Card>
                     </Col>
 
@@ -26,7 +26,7 @@ function CatSummary (){
                             <Card.Body>
                                 <Image className="weight" src={weight} alt="weight"/>                         
                             </Card.Body>
-                            <Card.Title className="pet-text">5.3kg</Card.Title>
+                            <Card.Title className="pet-text">3.2kg</Card.Title>
                         </Card>
                     </Col>
 
@@ -35,7 +35,7 @@ function CatSummary (){
                             <Card.Body>
                                 <Image className="age" src={birthday} alt="age" />   
                             </Card.Body>
-                            <Card.Title className="pet-text">20.05.2019</Card.Title>
+                            <Card.Title className="pet-text">02.11.2017</Card.Title>
                         </Card>
                     </Col>
 
@@ -44,7 +44,7 @@ function CatSummary (){
                             <Card.Body>
                                 <Image className="gender" src={gender} alt="gender" />   
                             </Card.Body>
-                            <Card.Title className="pet-text">Male</Card.Title>
+                            <Card.Title className="pet-text">Female</Card.Title>
                         </Card>
                     </Col>
                 </Card>

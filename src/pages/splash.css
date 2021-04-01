@@ -16,18 +16,26 @@
 .btn-splash{
     background-color: #A5D4FB !important;
     border-radius: 20px !important;
-    border-color:none !important;
+    border-color:#ffff!important;
+    outline:none !important;
+    height: 2.5rem;
 }
 
 .btn-splash:focus, 
 .btn-splash:active:focus,
 .btn-splash.active:focus{
-    outline:none !important;
+    outline: none !important;
     box-shadow:none !important;
     border-color:none !important;
 }
 
 .btn-splash:hover{
-    background-color: #A5D4FB !important;
-    opacity: 0.3 !important;
+    background-color: #ffff !important; 
+    color: #A5D4FB !important;
+    border-color: #A5D4FB !important;
 }
+
+/* .splash-link{
+     color:#000 !important;
+    text-decoration: none !important;
+} */

@@ -20,8 +20,8 @@ function Splash (){
                    
                 </Col>
                 <Col xs md lg={12} className="justify-content-center mt-4">
-                    <Link to="/landing">
-                        <Button className="btn-splash w-100">Enter</Button>
+                    <Link to="/landing" className="splash-link">
+                        <Button className="btn-splash  w-100">Enter</Button>
                     </Link>
                 </Col>
             </Row>

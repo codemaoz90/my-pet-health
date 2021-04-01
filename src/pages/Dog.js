@@ -1,7 +1,7 @@
 import React from "react"
 import {Container , Row , Col, Image, Card} from "react-bootstrap"
 import arrow from "../../src/assets/icons/cross.svg"
-import toby from "../../src/assets/icons/toby.svg"
+import toby from "../../src/assets/photos/toby-profile.png"
 import "../pages/dog.css"
 import DogSummary from "../components/dog/DogSummary"
 import DogMedical from "../components/dog/DogMedical"
