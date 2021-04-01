@@ -1,25 +1,27 @@
 import React from "react"
 import {Container, Col, Row, Card, Image} from "react-bootstrap"
-import plus from "../../assets/icons/plus.svg"
 import female from "../../assets/icons/female.svg"
 import male from "../../assets/icons/male.svg"
 import "../landing/landingPets.css"
 import {Link} from "react-router-dom";
 import toby from "../../assets/photos/toby-profile.png"
 import kitty from "../../assets/photos/kitty-profile.png"
+import { AiFillPlusCircle } from "react-icons/ai";
+// import { IoFemale } from "react-icons/ai";
+// import {IoMale} from "react-icons/ai"
 
 
 function MyPets (){
     return(
         <Container className="p-0">
-            <Card className="mt-4 border-0 p-0">
-                <Card.Body className="p-0">
+            <Card className="title-card mt-4 border-0 p-0 justify-content-between ">
+                <Card.Body className=" p-0">
                     <Row>
                         <Col xs={10} md lg={10}>
                             <Card.Title className="pets-title mb-0">My pets</Card.Title>
                         </Col>
                         <Col xs={2} md lg={2}>
-                            <Image className="plus-button" src={plus} alt="plus-button" />
+                            <AiFillPlusCircle size={50} className="plus-button justify-content-start" alt="plus-button" />
                         </Col>
                     </Row>
                 </Card.Body>      
@@ -33,7 +35,6 @@ function MyPets (){
                                 <Row >
                                     <Col xs={12} md lg={12} className="d-flex justify-content-center mt-2">
                                         <Image className="toby" src={toby} alt="toby" /> 
-                                        {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                                     </Col>
                                 </Row>
                                 <Row>

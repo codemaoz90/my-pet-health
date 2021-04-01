@@ -5,7 +5,7 @@ import glass from "../../assets/icons/glass.svg"
 
 function Searchbar (){
     return(
-         <Form className="d-flex justify-content-between align-items-center border-0 search-box">
+         <Form className="search-box d-flex justify-content-between align-items-center ">
             <FormControl
                 type="text"
                 placeholder="Search"

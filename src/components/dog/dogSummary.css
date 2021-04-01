@@ -2,8 +2,9 @@
     border-radius: 10px !important;
 }
 
-.race, .weight , .age , .gender {
+.race, .weight , .age-dog , .gender {
     width: 30px;
+    color: #A5D4FB !important;
 }
 
 .race-card, .weight-card, .age-card , .gender-card {
@@ -13,4 +14,5 @@
 .pet-text{
     font-size: 0.9rem !important;
     font-weight: 700 !important;
+    color: #A5D4FB !important;
 }

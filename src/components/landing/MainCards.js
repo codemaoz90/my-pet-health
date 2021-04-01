@@ -10,7 +10,7 @@ import {Container, Col, Row, Card, Image} from "react-bootstrap"
 function MainCards (){
 
     return(
-        <Container className=" mt-4">
+        <Container className="mt-4">
             <Row className="justify-content-between">
                 <Col className="d-flex flex-column justify-content-center align-items-center pl-0">
                     <Card className="vet-card">
@@ -52,7 +52,7 @@ function MainCards (){
              {/* Card reminder */}
             <Row>
                 <Col className="justify-content-center align-items-center p-0 mt-4">
-                    <Card>
+                    <Card className="reminder-card">
                         <Card.Body >
                             <Row>
                                 <Col xs={10} md lg={8}>

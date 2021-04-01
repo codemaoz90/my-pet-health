@@ -1,39 +1,46 @@
 import React from "react"
-import {Container , Row , Col, Image, Card} from "react-bootstrap"
+import {Container , Row , Col, Card} from "react-bootstrap"
 import "../dog/dogMedical.css"
 
-function DogMedical(){
-    return(
-        <Container fluid className="d-flex flex-row justify-content-center">
-            <Row className="medical-resume justify-content-between">
+function DogMedical() {
+    return (
+        <Container fluid className="">
+            <Row className="d-flex ">
                 <Col className="mt-4">
-                    <Card className="records-card">
-                        <Card.Title className="medical-text mt-2">Medical records</Card.Title>
+                    <Card className="medical-heightCard">
+                        <Card.Title className="d-flex flex-column medical-text mt-2 text-center">
+                            Medical <span>records</span>
+                        </Card.Title>
                     </Card>
                 </Col>
 
                 <Col className="mt-4">
-                    <Card className="visits-card d-flex justify-content-center">
-                        <Card.Title className="medical-text mt-2">Scheduled visits</Card.Title>
+                    <Card className="visits-heightCard">
+                        <Card.Title className="d-flex flex-column medical-text mt-2 text-center">
+                            Scheduled <span>visits</span>
+                        </Card.Title>
                     </Card>
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="d-flex">
                 <Col className="mt-4">
-                    <Card className="information-card d-flex justify-content-center">
-                        <Card.Title className="medical-text mt-2">Detailed information</Card.Title>
+                    <Card className="info-heightCard">
+                        <Card.Title className="d-flex flex-column medical-text mt-2 text-center">
+                            Detailed <span>information</span>
+                        </Card.Title>
                     </Card>
                 </Col>
 
                 <Col className="mt-4">
-                    <Card className="vaccination-card justify-content-center">
-                        <Card.Title className="medical-text mt-2">Vaccination schedule</Card.Title>
+                    <Card className="vaccination-heightCard">
+                        <Card.Title className="d-flex flex-column medical-text mt-2 text-center">
+                            Vaccination <span>schedule</span>
+                        </Card.Title>
                     </Card>
                 </Col>
             </Row>
-          
         </Container>
-    )
+    );
 }
-export default DogMedical
+export default DogMedical;

@@ -1,17 +1,24 @@
 /* Pets title */
 .pets-title{
    font-weight: 800 !important; 
+   background-color:#F9F9F9 !important;
 }
 
 /* Pets cards */
-.pets-card{
-    background-color: none !important;
+
+.kitty-card, .toby-card{
+    cursor: pointer;
+}
+
+.title-card{
+    background-color:#F9F9F9 !important;
 }
 
 /* images */
 .kitty,.toby{
     width: 120px;
 }
+
 /* text */
 .age, .type{
     font-size: 0.85rem !important;
@@ -20,19 +27,20 @@
 
 .pet-name{
     font-weight: 700 !important;
+    color: #A5D4FB !important;
 }
 
-.kitty-card, .toby-card{
-    cursor: pointer;
-}
 
 /* Plus button for adding pets */
+
 .plus-button{
-    width: 30px;
     cursor: pointer;
+    color: #FBE2B9 !important;
 }
+
 .plus-button:hover{
-   background-color:aqua !important;
+    color: #FBE2B9 !important;
+    opacity: 0.7 !important;
 }
 
 .pet-link{

@@ -1,4 +1,28 @@
+/* cards */
+.medical-heightCard, .vaccination-heightCard, .visits-heightCard, .info-heightCard {
+    height: 150px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border:none !important;
+    cursor: pointer;
+    color: #FFBE76 !important;
+}
+
+.medical-heightCard, .vaccination-heightCard {
+    background: #FFEFD7 !important;
+}
+
+.visits-heightCard, .info-heightCard{
+    background: #FFF6E9!important;
+}
+
+.medical-heightCard:hover, .vaccination-heightCard:hover, .visits-heightCard:hover, .info-heightCard:hover {
+   opacity: 0.5;
+   color: #FFBE76 !important;
+}
+
 .medical-text{
     font-weight: 800 !important;
-    font-size: 1.2rem !important;
+    font-size:  1.1rem !important;
 }

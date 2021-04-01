@@ -1,15 +1,16 @@
 
 .search-box{
-    color: #ABABAB;
+    border: 1px solid #E3E3E3;
     font-size: 0.9rem;
-    background: #F2F2F2;
     border-radius: 20px;
     height: 40px; 
     padding:10px;
+    background: #fff ;
 }
 
 .search{
-    background: #F2F2F2 !important;
+    color: #C4C4C4 !important; 
+    background: #fff ;
 }
 
 .search:focus, 
@@ -23,6 +24,6 @@
 }
 
 .glass{
-    color: #ABABAB !important;
-    width: 13px;
+    color: #C4C4C4 !important; 
+    width: 15px;
 }

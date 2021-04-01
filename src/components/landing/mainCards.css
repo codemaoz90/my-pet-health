@@ -1,6 +1,13 @@
 /* Options card */
 .vet-card, .grooming-card ,.consult-card ,.nutrition-card{
     cursor: pointer; 
+    background-color: #F2F2F2 !important;
+    border:none !important;
+}
+
+.vet-card:hover, .grooming-card:hover ,.consult-card:hover ,.nutrition-card:hover{
+    background: #fff !important;
+    
 }
 
 .vet,.grooming, .consult , .nutrition {
@@ -10,11 +17,20 @@
 .card-text{
     font-size: 0.9rem !important;
     font-weight: 700 !important;
+    color:#A5D4FB !important;
 }
 
 /* Reminder card */
+.reminder-card{
+    background:#A5D4FB !important;
+    color: #ffff !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border: none !important;
+}
+
 .paw{
     width: 40px;
+    color: #ffff !important;
 }
 .date-title{
     font-size: 0.9rem !important;

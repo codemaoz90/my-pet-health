@@ -1,0 +1,16 @@
+.medical-heightCard, .vaccination-heightCard, .visits-heightCard, .info-heightCard {
+    height: 150px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border:none !important;
+    cursor: pointer;
+}
+
+.medical-heightCard, .vaccination-heightCard {
+    background: #FFEFD7 !important;
+}
+
+.visits-heightCard, .info-heightCard{
+    background: #FFF6E9!important;
+}

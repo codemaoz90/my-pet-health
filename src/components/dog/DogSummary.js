@@ -9,10 +9,10 @@ import "../dog/dogSummary.css"
 
 function DogSummary (){
     return(
-        <Container fluid className="p-0">
+        <Container fluid className="">
             <Row>
-                <Card className="toby-summary d-flex flex-row justify-content-center align-items-center">
-                    <Col className="d-flex flex-column justify-content-center align-items-center">
+                <Card className="toby-summary d-flex flex-row">
+                    <Col className="d-flex flex-column">
                         <Card className="race-card align-items-center">
                             <Card.Body>
                                 <Image className="race" src={race} alt="race" />   
@@ -21,7 +21,7 @@ function DogSummary (){
                         </Card>
                     </Col>
 
-                    <Col className="d-flex flex-column justify-content-center align-items-center">
+                    <Col className="d-flex flex-column">
                         <Card className="weight-card align-items-center">
                             <Card.Body>
                                 <Image className="weight" src={weight} alt="weight"/>                         
@@ -30,16 +30,16 @@ function DogSummary (){
                         </Card>
                     </Col>
 
-                    <Col className="d-flex flex-column justify-content-center align-items-center">
+                    <Col className="d-flex flex-column">
                         <Card className="age-card align-items-center">
                             <Card.Body>
-                                <Image className="age" src={birthday} alt="age" />   
+                                <Image className="age-dog" src={birthday} alt="age" />   
                             </Card.Body>
                             <Card.Title className="pet-text">20.05.2019</Card.Title>
                         </Card>
                     </Col>
 
-                    <Col className="d-flex flex-column justify-content-center align-items-center">
+                    <Col className="d-flex flex-column">
                         <Card className="gender-card align-items-center">
                             <Card.Body>
                                 <Image className="gender" src={gender} alt="gender" />   
