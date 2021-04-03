@@ -20,7 +20,10 @@ function NavBar() {
 			</div>
 			<div className={`profile ${!sidebar ? "hidden" : ""}`}>
 				<div>
-					<img style={{ borderRadius: "50%", width: "100px" }} src={avatar} />
+					<img
+						style={{ borderRadius: "50%", width: "100px" }}
+						src={avatar}
+					/>
 				</div>
 				<h3>James</h3>
 			</div>
@@ -36,10 +39,12 @@ function NavBar() {
 					);
 				})}
 			</div>
-			<button className={`btn-logout ${!sidebar ? "hidden" : ""}`}>
-				<span className="mr-1">Logout</span>
-				<FaIcons.FaSignOutAlt />
-			</button>
+			<div className="sideBarBtn ">
+				<button className={` btn-logout ${!sidebar ? "hidden" : ""} `}>
+					<span className="mr-2">Logout</span>
+					<FaIcons.FaSignOutAlt />
+				</button>
+			</div>
 		</nav>
 	);
 }
