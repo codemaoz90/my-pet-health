@@ -5,6 +5,7 @@ import Dog from "../pages/Dog";
 import Cat from "../pages/Cat";
 import NavBar from "../components/SideBar/NavBar";
 import Welcome from "../pages/Welcome";
+import Schedule from "../pages/Schedule";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function Routes() {
 	return (
@@ -31,6 +32,9 @@ function Routes() {
 
 				<Route path="/cat">
 					<Cat />
+				</Route>
+				<Route path="/schedule">
+					<Schedule />
 				</Route>
 			</Switch>
 		</Router>
