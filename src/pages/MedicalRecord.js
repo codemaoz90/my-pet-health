@@ -12,7 +12,7 @@ function Schedule() {
 		<>
 			<div className="d-flex justify-content-center align-items-center vh-100">
 				<Container style={{ width: "700px" }}>
-					<h2 className="text-center">Scheduled Visits</h2>
+					<h2 className="text-center">Medical Records</h2>
 					<Search />
 					<Card />
 					<Card />
