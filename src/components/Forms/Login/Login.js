@@ -6,7 +6,7 @@ import "./Login.css";
 
 export default function Login({ controlId }) {
 	const colorB = {
-		color: controlId === "user" ? "#f4c897 " : "",
+		color: controlId === "user" ? "#f4c897 " : "#a5d4fb",
 		fontWeight: "bold",
 		cursor: "pointer",
 	};
@@ -22,7 +22,7 @@ export default function Login({ controlId }) {
 				console.log(user.user.email);
 			})
 			.catch((error) => {
-				console.log("error de autenticacion");
+				console.log(error, "error de autenticacion");
 			});
 	};
 
@@ -38,7 +38,9 @@ export default function Login({ controlId }) {
 				</Form.Group>
 
 				<Button
-					className={`${controlId === "user" ? "btnUser" : ""} `}
+					className={`${
+						controlId === "user" ? "btnUser" : "btnProf"
+					} `}
 					variant="primary radius "
 					size="lg"
 					block
@@ -51,7 +53,7 @@ export default function Login({ controlId }) {
 				</p>
 				<p className=" text-center ">
 					Already member?
-					<Link style={colorB} to="/register">
+					<Link style={colorB} className="ml-2" to="/register">
 						Create Account
 					</Link>
 				</p>

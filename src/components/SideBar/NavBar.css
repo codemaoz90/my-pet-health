@@ -4,12 +4,12 @@ FBE2B9 // orange light */
 .sideBar {
 	background-color: #f4c897;
 	height: 100vh;
-	width: 300px;
+	width: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 10px;
-	position: fixed;
+	/* position: fixed; */
 
 	transition: 850ms;
 }
@@ -22,17 +22,19 @@ FBE2B9 // orange light */
 	width: 100%;
 	text-align: right;
 	padding-right: 20px;
-	color: white;
+	color: black;
 }
 .sideBar .profile {
 	text-align: center;
 	margin: 40px 0;
 	color: black;
-	font-weight: 700;
+	font-weight: bolder;
+	font-size: 1.7rem;
 }
 
 .sideBar-links {
 	width: 100%;
+	padding: 0 20px;
 }
 
 .sideBar-links a {
@@ -40,7 +42,7 @@ FBE2B9 // orange light */
 	justify-content: space-between;
 	align-items: center;
 	color: white;
-	padding: 20px 10px;
+	padding: 20px 20px;
 	/* border: 1px solid rgb(202, 200, 200); */
 	border-radius: 10px;
 	margin-bottom: 10px;
@@ -53,7 +55,7 @@ FBE2B9 // orange light */
 	text-decoration: none;
 }
 .sideBar.inactive {
-	width: 50px;
+	width: 90px;
 }
 .sideBar .hidden {
 	display: none;
@@ -61,10 +63,12 @@ FBE2B9 // orange light */
 
 .sideBarBtn {
 	width: 100%;
+	padding-left: 30px;
 }
 
 .btn-logout {
 	margin-top: 30px;
 	border: 0;
 	background: none;
+	font-weight: bolder;
 }

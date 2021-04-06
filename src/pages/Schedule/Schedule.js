@@ -1,7 +1,7 @@
 import Card from "../../components/Card/Card";
 import { Button, Container, Col } from "react-bootstrap";
 import Search from "../../components/Search/Search";
-import SideBar from "../../components/SideBar/NavBar";
+import NavBar from "../../components/SideBar/NavBar";
 function Schedule() {
 	const styledButton = {
 		border: "none",
@@ -11,12 +11,13 @@ function Schedule() {
 	};
 	return (
 		<>
-			<div className="d-flex">
-				{/* <SideBar /> */}
-
-				<div className="d-flex justify-content-center align-items-center vh-100">
-					<Container style={{ width: "700px" }}>
-						<h2 className="text-center">Scheduled Visits</h2>
+			<div className="d-flex align-items-center">
+				<div style={{ width: "20%" }}>
+					<NavBar />
+				</div>
+				<div style={{ width: "100%" }}>
+					<Container style={{ width: "600px" }}>
+						<h2 className="text-center">Schedule visits</h2>
 						<Search />
 						<Card />
 						<Card />

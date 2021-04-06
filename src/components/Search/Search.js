@@ -4,7 +4,7 @@ import "./Search.css";
 export default function Search() {
 	const searchDiv = {
 		//marginLeft: "16px",
-		width: "630px",
+		width: "550px",
 		borderRadius: "15px",
 		backgroundColor: "#E3E3E3",
 	};

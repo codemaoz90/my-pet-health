@@ -22,6 +22,7 @@
 	font-weight: 700;
 	border: none;
 	background-color: var(--bgcolor);
+	border-radius: 10px;
 }
 .form .btnUser:hover {
 	background: var(--bgcolor);
@@ -37,22 +38,53 @@
 	color: black;
 	background-color: var(--bgcolor);
 }
+.form .form-control {
+	background-color: #e3e3e3;
+	padding: 1.3em;
+	border-radius: 10px;
+}
 
 .form-control:focus {
-	box-shadow: none;
-	border: 1px solid #ced4da;
+	box-shadow: none !important;
+	border: none !important;
+	border-color: none !important;
+	background-color: #e3e3e3 !important;
 }
 
 /*  Nav tabs */
 
 .nav-tabs .nav-link {
-	border: 0;
+	border: 0 !important;
 	color: black;
 }
 
 .nav-tabs .nav-link.activeAnchor {
-	border-bottom: 4px solid #f4c897;
+	border-bottom: 4px solid #f4c897 !important;
+	background-color: #f9f9f9;
 }
 .nav-tabs .nav-link.activeProf {
-	border-bottom: 4px solid #a5d4fb;
+	border-bottom: 4px solid #a5d4fb !important;
+	background-color: #f9f9f9;
+}
+
+.form .btnProf {
+	border-radius: 10px;
+	color: black;
+	font-weight: 700;
+	border: none;
+	background-color: #a5d4fb;
+}
+.form .btnProf:hover {
+	background: #a5d4fb;
+}
+.form .btnProf:active {
+	border: none;
+	outline: 0;
+	color: black !important;
+	background-color: #a5d4fb !important;
+}
+.form .btnProf:focus {
+	box-shadow: none !important;
+	color: black;
+	background-color: #a5d4fb;
 }

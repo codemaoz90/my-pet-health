@@ -17,7 +17,10 @@ function NavBar(props) {
 		<nav className={`sideBar ${sidebar ? " menu-active" : "inactive"} `}>
 			<div className="sideBarCloseBtn">
 				{sidebar ? (
-					<AiIcons.AiOutlineClose onClick={showSidebar} />
+					<AiIcons.AiOutlineClose
+						stroke-width="2em"
+						onClick={showSidebar}
+					/>
 				) : (
 					<FaIcons.FaBars onClick={showSidebar} />
 				)}
@@ -29,7 +32,10 @@ function NavBar(props) {
 						src={avatar}
 					/>
 				</div>
-				<h3>James</h3>
+				<span>James</span>
+				<p style={{ fontSize: "1rem", fontWeight: "100" }}>
+					Change profile photo
+				</p>
 			</div>
 			<div className={`sideBar-links ${!sidebar ? "hidden" : ""}`}>
 				{SidebarData.map((item, index) => {
