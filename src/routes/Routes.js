@@ -6,7 +6,7 @@ import Cat from "../pages/Cat";
 import NavBar from "../components/SideBar/NavBar";
 import Welcome from "../pages/Welcome";
 import MedicalRecord from "../pages/MedicalRecord";
-import Schedule from "../pages/Schedule";
+import Schedule from "../pages/Schedule/Schedule";
 import DetailedInformation from "../pages/DetailedInformation";
 import Vaccination from "../pages/Vaccination";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,22 +17,18 @@ function Routes() {
 				<Route path="/" exact>
 					<Splash />
 				</Route>
-
 				<Route path="/landing">
 					<Landing />
 				</Route>
 				<Route path="/sidebar">
 					<NavBar />
 				</Route>
-
 				<Route path="/login">
 					<Welcome />
 				</Route>
-
 				<Route path="/dog">
 					<Dog />
 				</Route>
-
 				<Route path="/cat">
 					<Cat />
 				</Route>

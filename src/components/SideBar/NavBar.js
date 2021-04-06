@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import avatar from "../../assets/img/james.png";
 import "./NavBar.css";
-function NavBar() {
+import { AuthContext } from "../../context/Auth";
+function NavBar(props) {
+	// Obtain the user from AuthContext Provider.
+	const user = useContext(AuthContext);
+	console.log(user);
 	const [sidebar, setSidebar] = useState(true);
 
 	const showSidebar = () => setSidebar(!sidebar);
@@ -41,7 +45,7 @@ function NavBar() {
 			</div>
 			<div className="sideBarBtn ">
 				<button className={` btn-logout ${!sidebar ? "hidden" : ""} `}>
-					<span className="mr-2">Logout</span>
+					<span className="mr-2">Log out</span>
 					<FaIcons.FaSignOutAlt />
 				</button>
 			</div>
