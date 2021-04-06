@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Login from "../components/Forms/Login/Login";
 import { Container, Row, Tabs, Tab } from "react-bootstrap";
-
+import firebase from "firebase/app";
 export default function Welcome() {
 	const [activeKey, setActiveKey] = useState("user");
+
 	return (
 		<Container className=" vh-100 d-flex flex-column justify-content-center align-items-center">
 			<Row className="d-flex flex-column">

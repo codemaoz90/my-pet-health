@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { useState, useEffect } from "react";
 import app from "../../../config/firebase";
 import "./Login.css";
 
@@ -15,16 +16,16 @@ export default function Login({ controlId }) {
 		const [email, password] = e.target.elements;
 
 		// Llamando a la funcion de firebase importada de config/firebase
-		app
-			.auth()
+		app.auth()
 			.signInWithEmailAndPassword(email.value, password.value)
 			.then((user) => {
-				console.log(user);
+				console.log(user.user.email);
 			})
 			.catch((error) => {
 				console.log("error de autenticacion");
 			});
 	};
+
 	return (
 		<>
 			<Form variant="mb-5" className="form" onSubmit={(e) => onSubmit(e)}>

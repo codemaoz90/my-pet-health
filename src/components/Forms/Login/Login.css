@@ -34,6 +34,8 @@
 }
 .form .btnUser:focus {
 	box-shadow: none !important;
+	color: black;
+	background-color: var(--bgcolor);
 }
 
 .form-control:focus {
