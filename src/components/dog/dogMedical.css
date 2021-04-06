@@ -6,20 +6,15 @@
     align-items: center;
     border:none !important;
     cursor: pointer;
-    color: #FFBE76 !important;
+    color: #fff !important;
 }
 
-.medical-heightCard, .vaccination-heightCard {
-    background: #FFEFD7 !important;
-}
-
-.visits-heightCard, .info-heightCard{
-    background: #FFF6E9!important;
+.medical-heightCard, .vaccination-heightCard, .visits-heightCard, .info-heightCard {
+    background: #A5D4FB !important;
 }
 
 .medical-heightCard:hover, .vaccination-heightCard:hover, .visits-heightCard:hover, .info-heightCard:hover {
    opacity: 0.5;
-   color: #FFBE76 !important;
 }
 
 .medical-text{

@@ -1,6 +1,6 @@
 import React from "react"
 import {Container , Row , Col, Image, Card} from "react-bootstrap"
-import arrow from "../../src/assets/icons/cross.svg"
+import {BsArrowLeftShort} from "react-icons/bs"
 import kitty from "../../src/assets/photos/kitty-profile.png"
 import "../pages/cat.css"
 import CatSummary from "../components/cat/CatSummary"
@@ -11,10 +11,10 @@ function Cat (){
     return(
         <Container fluid className="cat d-flex flex-column justify-content-center align-items-center">
             {/* HEADER */}
-            <Row>
+            <Row className="d-flex justify-content-start">
                 <Link to="landing">
                     <Col xs={10} md lg={4}>
-                        <Image className="arrow" src={arrow} alt="arrow" /> 
+                        <BsArrowLeftShort size={30} className="arrow" alt="arrow" /> 
                     </Col>
                 </Link>
             </Row>

@@ -4,7 +4,6 @@
 
 .race, .weight , .age-dog , .gender {
     width: 30px;
-    color: #A5D4FB !important;
 }
 
 .race-card, .weight-card, .age-card , .gender-card {

@@ -1,6 +1,6 @@
 import React from "react"
 import {Container , Row , Col, Image, Card} from "react-bootstrap"
-import arrow from "../../src/assets/icons/cross.svg"
+import {BsArrowLeftShort} from "react-icons/bs"
 import toby from "../../src/assets/photos/toby-profile.png"
 import "../pages/dog.css"
 import DogSummary from "../components/dog/DogSummary"
@@ -14,7 +14,7 @@ function Dog (){
             <Row>
                 <Link to="landing">
                     <Col xs={10} md lg={6}>
-                        <Image className="arrow" src={arrow} alt="arrow" /> 
+                        <BsArrowLeftShort size={30} className="arrow" alt="arrow" /> 
                     </Col>
                 </Link>
             </Row>
