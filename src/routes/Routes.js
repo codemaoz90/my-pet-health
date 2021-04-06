@@ -13,6 +13,7 @@ import InfoHealth from "../pages/Information/InfoHealth";
 import InfoGrooming from "../pages/Information/InfoGrooming";
 import InfoAlerts from "../pages/Information/InfoAlerts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function Routes() {
 	return (
 		<Router>

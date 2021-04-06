@@ -14,13 +14,14 @@ function InfoHealth (){
                 <Image src={pills} className="pills" alt="pills" />
             </Row>
 
-            <Row className="d-flex flex-column justify-content-center mt-5">
+            <Row className="d-flex flex-column mt-5">
                 <Col>
-                    <p className="info-title">Health Control</p>
+                    <p className="info-title d-flex justify-content-center">Health Control</p>
                 </Col>
 
-                <Col>
-                    <p className="info-paragraph">Health is important! Schedule appointment with a Vet.</p>
+                <Col className="mt-4">
+                    <p className="info-paragraph d-flex justify-content-center">
+                        Health is important! Schedule appointment with a Vet.</p>
                 </Col>
             </Row>
 

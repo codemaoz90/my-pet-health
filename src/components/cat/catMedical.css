@@ -7,9 +7,14 @@
     cursor: pointer;
 }
 
-.medical-heightCard, .vaccination-heightCard, .visits-heightCard, .info-heightCard{ 
+.medical-heightCard, .vaccination-heightCard { 
     background: #A5D4FB !important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
+
+.visits-heightCard, .info-heightCard{
+    background: #8BB4D7!important;
+}
+
 
 

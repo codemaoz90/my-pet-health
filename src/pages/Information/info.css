@@ -18,6 +18,11 @@
 }
 
 /* Texts */
+.skip{
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+
 .info-title{
     font-weight: 800;
     font-size: 1.5rem;
@@ -67,4 +72,9 @@
     outline: none !important;
     box-shadow:none !important;
     border-color:none !important;
+}
+
+.link{
+    text-decoration: none !important;
+    color:#000 !important;
 }
