@@ -4,7 +4,6 @@ import {BiEnvelope} from "react-icons/bi"
 import {CgPill} from  "react-icons/cg"
 import {BiBone} from "react-icons/bi"
 import {IoPawOutline} from "react-icons/io5"
-import paw from "../../assets/icons/paw.svg"
 import "../landing/mainCards.css"
 import {Container, Col, Row, Card, Image} from "react-bootstrap"
 

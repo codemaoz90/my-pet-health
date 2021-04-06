@@ -1,0 +1,70 @@
+.info{
+    font-family: 'Gilroy', sans-serif;
+    height:100vh;
+    background-color:#F9F9F9 !important;
+}
+
+/* Size images */
+.pills{
+    width:120px;
+}
+
+.shower{
+    width:250px;
+}
+
+.alert{
+    width:300px;
+}
+
+/* Texts */
+.info-title{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.info-paragraph{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Navbar */
+.info-navbar{
+    color:#F4C897!important;
+}
+
+.info-navbar-button{
+    color:#F4C897!important;
+    opacity: 0.3;
+}
+
+.navbar-text{
+    color:#F4C897!important;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+/* Button */
+.btn-info{
+    background:#F4C897!important;
+    color:#000 !important;
+    font-weight: 800 !important;
+    font-size: 1rem  !important;
+    width: 300px;
+    border-color:#F9F9F9 !important;
+ 
+}
+
+.btn-info:hover{
+    background-color: #ffff !important; 
+    color: #F4C897 !important;
+    border-color: #F4C897 !important;
+}
+
+.btn-info:focus, 
+.btn-info:active:focus,
+.btn-info.active:focus{
+    outline: none !important;
+    box-shadow:none !important;
+    border-color:none !important;
+}

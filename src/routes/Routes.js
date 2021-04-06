@@ -9,6 +9,9 @@ import MedicalRecord from "../pages/MedicalRecord";
 import Schedule from "../pages/Schedule/Schedule";
 import DetailedInformation from "../pages/DetailedInformation";
 import Vaccination from "../pages/Vaccination";
+import InfoHealth from "../pages/Information/InfoHealth";
+import InfoGrooming from "../pages/Information/InfoGrooming";
+import InfoAlerts from "../pages/Information/InfoAlerts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function Routes() {
 	return (
@@ -17,6 +20,19 @@ function Routes() {
 				<Route path="/" exact>
 					<Splash />
 				</Route>
+
+				<Route path="/info_health">
+					<InfoHealth />
+				</Route>
+
+				<Route path="/info_grooming">
+					<InfoGrooming />
+				</Route>
+
+				<Route path="/info_alerts">
+					<InfoAlerts />
+				</Route>
+
 				<Route path="/landing">
 					<Landing />
 				</Route>

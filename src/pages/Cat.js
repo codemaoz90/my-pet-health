@@ -27,7 +27,7 @@ function Cat (){
 
             {/* PET SUMMARY */}
             <Row className="mt-4">
-                <Col xs={12} md lg={12}>
+                <Col>
                     <CatSummary/>
                 </Col>
             </Row>
