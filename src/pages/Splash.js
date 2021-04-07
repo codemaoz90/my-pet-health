@@ -9,7 +9,7 @@ function Splash() {
 	const [timeoutSplash, setTimeoutSplash] = useState(false);
 	setTimeout(() => {
 		setTimeoutSplash(true);
-	}, 3000);
+	}, 2000);
 
 	return (
 		<Container

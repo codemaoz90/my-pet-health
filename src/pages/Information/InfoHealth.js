@@ -25,8 +25,8 @@ function InfoHealth (){
                 </Col>
             </Row>
 
-            <Row className="d-flex flex-row jusitfy-content-between align-items-center mt-5">
-                <Col xs={2} md lg={3}>
+            <Row className="d-flex align-items-center mt-5">
+                <Col xs={2} md lg={3} className="d-flex justify-content-center">
                  <Link to="landing">
                         <p className="navbar-text mb-0">Skip</p>
                     </Link>
@@ -38,7 +38,7 @@ function InfoHealth (){
                     <BsDot size={70} className="info-navbar-button" alt="navbar" />
                 </Col>
 
-                <Col xs={2} md lg={3}>
+                <Col xs={2} md lg={3} className="d-flex justify-content-center">
                     <Link to="info_grooming">
                         <p className="navbar-text mb-0">Next</p>
                     </Link>

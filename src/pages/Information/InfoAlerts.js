@@ -14,7 +14,7 @@ function InfoHealth() {
 		>
 			<Row
 				className="d-flex align-items-center justify-content-between"
-				style={{ position: "absolute", top: "40px", left: "20px" }}
+				style={{ position: "absolute", top: "20px", left: "20px" }}
 			>
 				<Col>
 					<Link to="info_grooming">
@@ -28,10 +28,10 @@ function InfoHealth() {
 			</Row>
 
 			<Row>
-				<Image src={alert} className="alert mb-0 mt-5" alt="alert" />
+				<Image src={alert} className="alert mb-0" alt="alert" />
 			</Row>
 
-			<Row className="d-flex flex-column mt-5">
+			<Row className="d-flex flex-column">
 				<Col>
 					<p className="info-title d-flex justify-content-center">
 						Never forget

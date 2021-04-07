@@ -14,7 +14,7 @@ function InfoHealth() {
 			fluid
 			className="info d-flex flex-column justify-content-center align-items-center"
 		>
-			<Row style={{ position: "absolute", top: "40px", left: "20px" }}>
+			<Row style={{ position: "absolute", top: "20px", left: "20px" }}>
 				<Col>
 					<Link to="info_health">
 						<BsArrowLeftShort
@@ -26,7 +26,7 @@ function InfoHealth() {
 				</Col>
 			</Row>
 
-			<Row clasName="mt-5">
+			<Row >
 				<Image src={shower} className="shower" alt="shower" />
 			</Row>
 
@@ -46,7 +46,7 @@ function InfoHealth() {
 			</Row>
 
 			<Row className="d-flex align-items-center mt-5">
-				<Col xs={2} md lg={3}>
+				<Col xs={2} md lg={3} className="d-flex justify-content-center">
 					<Link to="landing">
 						<p className="navbar-text mb-0">Skip</p>
 					</Link>
@@ -66,7 +66,7 @@ function InfoHealth() {
 					/>
 				</Col>
 
-				<Col xs={2} md lg={3}>
+				<Col xs={2} md lg={3} className="d-flex justify-content-center">
 					<Link to="info_alerts">
 						<p className="navbar-text mb-0">Next</p>
 					</Link>
