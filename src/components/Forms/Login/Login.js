@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import { Form, Button } from "react-bootstrap";
+
 import { Link, Redirect } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { AuthContext } from "../../../context/Auth";
 import app from "../../../config/firebase";
 import "./Login.css";
 
@@ -26,6 +28,10 @@ export default function Login({ controlId }) {
 			});
 	};
 
+	const { currentUser } = useContext(AuthContext);
+	if (currentUser) {
+		return <Redirect to="/landing" />;
+	}
 	return (
 		<>
 			<Form variant="mb-5" className="form" onSubmit={(e) => onSubmit(e)}>
@@ -44,23 +50,23 @@ export default function Login({ controlId }) {
 						style={{ fontFamily: "Gilroy, serif" }}
 					/>
 				</Form.Group>
-				<Link style={{ textDecoration: "none" }} to="/landing">
-					<Button
-						className={`${
-							controlId === "user" ? "btnUser" : "btnProf"
-						} `}
-						variant="primary radius "
-						size="lg"
-						block
-						type="submit"
-						style={{
-							fontFamily: "Gilroy",
-							fontWeight: "900",
-						}}
-					>
-						Log in
-					</Button>
-				</Link>
+
+				<Button
+					className={`${
+						controlId === "user" ? "btnUser" : "btnProf"
+					} `}
+					variant="primary radius "
+					size="lg"
+					block
+					type="submit"
+					style={{
+						fontFamily: "Gilroy",
+						fontWeight: "900",
+					}}
+				>
+					Log in
+				</Button>
+
 				<p
 					className="font-weight-bold  my-5 text-center"
 					style={{ fontFamily: "Gilroy, serif" }}

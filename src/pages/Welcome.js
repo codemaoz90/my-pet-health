@@ -3,7 +3,6 @@ import Login from "../components/Forms/Login/Login";
 import { Container, Row, Tabs, Tab } from "react-bootstrap";
 export default function Welcome() {
 	const [activeKey, setActiveKey] = useState("user");
-	console.log(activeKey);
 
 	return (
 		<Container className=" vh-100 d-flex flex-column justify-content-center align-items-center">

@@ -14,7 +14,7 @@ import InfoGrooming from "../pages/Information/InfoGrooming";
 import InfoAlerts from "../pages/Information/InfoAlerts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignIn from "../components/Forms/SignIn/SignIn";
-
+import PrivateRoute from "./PrivateRoute";
 function Routes() {
 	return (
 		<Router>
@@ -35,9 +35,8 @@ function Routes() {
 					<InfoAlerts />
 				</Route>
 
-				<Route path="/landing">
-					<Landing />
-				</Route>
+				<PrivateRoute path="/landing" component={Landing} />
+
 				<Route path="/sidebar">
 					<NavBar />
 				</Route>
@@ -68,6 +67,7 @@ function Routes() {
 				<Route path="/vaccination">
 					<Vaccination />
 				</Route>
+				<Route exact path="/register" component={SignIn} />
 			</Switch>
 		</Router>
 	);

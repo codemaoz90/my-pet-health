@@ -69,23 +69,22 @@ export default function SignIn() {
 							className="password"
 						></Form.Control>
 					</Form.Group>
-					<Link to="/landing">
-						<Button
-							type="submit"
-							style={{ borderRadius: "10px" }}
-							className="btn-sign w-100"
-							size="lg"
-						>
-							Sign in
-						</Button>
-					</Link>
+
+					<Button
+						type="submit"
+						style={{ borderRadius: "10px" }}
+						className="btn-sign w-100"
+						size="lg"
+					>
+						Sign in
+					</Button>
+
 					<Form.Text
 						style={{ fontFamily: "Gilroy", fontSize: "1rem" }}
 						className=" my-5 text-center"
 					>
 						Already have an account?
 						<Link to="/login" className="login-link">
-							{" "}
 							Log in here
 						</Link>
 					</Form.Text>
