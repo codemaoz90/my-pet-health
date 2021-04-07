@@ -46,7 +46,7 @@ function Routes() {
 				</Route>
 
 				<Route path="/signin">
-					<SignIn/>
+					<SignIn />
 				</Route>
 
 				<Route path="/dog">
