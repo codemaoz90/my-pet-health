@@ -14,7 +14,7 @@ function InfoHealth() {
 		>
 			<Row
 				className="d-flex align-items-center justify-content-between"
-				style={{ width: "450px" }}
+				style={{ position: "absolute", top: "40px", left: "20px" }}
 			>
 				<Col>
 					<Link to="info_grooming">

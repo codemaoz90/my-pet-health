@@ -14,7 +14,7 @@ function InfoHealth() {
 			fluid
 			className="info d-flex flex-column justify-content-center align-items-center"
 		>
-			<Row style={{ width: "500px" }}>
+			<Row style={{ position: "absolute", top: "40px", left: "20px" }}>
 				<Col>
 					<Link to="info_health">
 						<BsArrowLeftShort

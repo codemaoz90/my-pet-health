@@ -24,7 +24,7 @@ export default function SignIn() {
 
 	return (
 		<>
-			<div className="d-flex flex-column vh-100 vw-100 justify-content-center align-items-center signin">
+			<div className="d-flex flex-column vh-100 vw-100 justify-content-center align-items-center ">
 				{alert === true && (
 					<Alert
 						onClose={() => setAlert(false)}
@@ -34,10 +34,18 @@ export default function SignIn() {
 						Usuario creado con exito
 					</Alert>
 				)}
-				<h1 className="my-3">Create account</h1>
-				<p className="my-3 font-weight-bold">Sign in your account</p>
+				<h1 className="my-3" style={{ fontFamily: "Gilroy, serif" }}>
+					Create account
+				</h1>
+				<p
+					className="my-3 font-weight-bold"
+					style={{ fontFamily: "Gilroy, serif" }}
+				>
+					Sign in your account
+				</p>
 				<Form
-					className="sign-in w-50 mt-5"
+					style={{ width: "400px" }}
+					className="sign-in  mt-5"
 					onSubmit={(e) => handleSubmit(e)}
 				>
 					<Form.Group controlId="name">
@@ -56,7 +64,7 @@ export default function SignIn() {
 					</Form.Group>
 					<Form.Group controlId="password">
 						<Form.Control
-							type="password"
+							type="passworgid"
 							placeholder="Password"
 							className="password"
 						></Form.Control>
