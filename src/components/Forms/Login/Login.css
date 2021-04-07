@@ -2,8 +2,8 @@
 	--bgcolor: #fbe2b9;
 }
 
-.form{
-	font-family: 'Gilroy', sans-serif;
+.form {
+	font-family: "Gilroy", sans-serif;
 }
 
 .tab-content {
@@ -30,7 +30,7 @@
 }
 
 .form .btnUser:hover {
-	background-color: #ffff ; 
+	background-color: #ffff;
 	color: var(--bgcolor);
 	border-color: var(--bgcolor);
 }
@@ -43,29 +43,31 @@
 }
 .form .btnUser:focus {
 	box-shadow: none !important;
-	background-color: #ffff ; 
-	color: var(--bgcolor);	
+	background-color: #ffff;
+	color: var(--bgcolor);
 }
 
-
 .form .form-control {
-	background-color: #F2F2F2 ;
+	background-color: #f2f2f2;
 	padding: 1.3em;
 	border-radius: 10px;
-	border-color: #F2F2F2 ;
-	color:#9E9E9E !important;
+	border-color: #f2f2f2;
+	color: #9e9e9e !important;
 }
 
 .form-control:focus {
 	box-shadow: none !important;
 	border: none !important;
 	border-color: none !important;
-	background-color: #F2F2F2!important;
+	background-color: #f2f2f2 !important;
 }
 
 /*  Nav tabs */
-
+.nav-tabs {
+	font-family: Gilroy, sans-serif;
+}
 .nav-tabs .nav-link {
+	font-family: Gilroy, sans-serif;
 	border: 0 !important;
 	color: black;
 }
@@ -87,8 +89,8 @@
 	background-color: #a5d4fb;
 }
 .form .btnProf:hover {
-	background-color: #ffff !important; 
-	color:#a5d4fb;
+	background-color: #ffff !important;
+	color: #a5d4fb;
 	border-color: #a5d4fb;
 }
 
