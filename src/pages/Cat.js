@@ -32,8 +32,8 @@ function Cat() {
 			</Row>
 
 			{/* PET SUMMARY */}
-			<Row className="mt-4">
-				<Col>
+			<Row className="d-flex justify-content-center mt-4">
+				<Col xs={12} md lg={5}>
 					<CatSummary />
 				</Col>
 			</Row>
