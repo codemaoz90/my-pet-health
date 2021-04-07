@@ -9,30 +9,26 @@ import { Link } from "react-router-dom";
 
 function Cat() {
 	return (
-		<Container
-			fluid
-			className="cat d-flex flex-column justify-content-center align-items-center"
-		>
+		<Container fluid className="cat">
 			{/* HEADER */}
-			<Row
-				className="d-flex justify-content-start"
-				style={{ width: "500px" }}
-			>
-				<Link to="landing">
-					<Col xs={10} md lg={4}>
+			<Row >
+				<Col className="justify-content-start mt-3">
+					<Link to="landing">
 						<BsArrowLeftShort
-							size={30}
+							size={40}
 							className="arrow"
 							alt="arrow"
 						/>
-					</Col>
-				</Link>
+					</Link>
+				</Col>
 			</Row>
 
 			{/* PET PICTURE + NAME */}
-			<Row className="d-flex flex-column align-items-center mt-4">
-				<Image className="kitty" src={kitty} alt="kitty" />
-				<p className="kitty-name mb-0 mt-3">Kitty</p>
+			<Row >
+				<Col xs md lg={12} className="d-flex flex-column justify-content-center align-items-center" >
+					<Image className="kitty" src={kitty} alt="kitty" />
+					<p className="kitty-name mb-0 mt-3">Kitty</p>
+				</Col>
 			</Row>
 
 			{/* PET SUMMARY */}
@@ -43,8 +39,10 @@ function Cat() {
 			</Row>
 
 			{/* MEDICAL RESUME */}
-			<Row>
-				<CatMedical />
+			<Row className="d-flex justify-content-center mt-4">
+				<Col xs md lg={5} className="d-flex justify-content-center align-items-center">
+					<CatMedical />
+				</Col>
 			</Row>
 		</Container>
 	);

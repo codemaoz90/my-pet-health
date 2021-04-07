@@ -10,7 +10,7 @@ import "../dog/dogSummary.css"
 function DogSummary (){
     return(
         <Container fluid className="">
-            <Row>
+            <Row className="justify-content-center">
                 <Card className="toby-summary d-flex flex-row">
                     <Col className="d-flex flex-column">
                         <Card className="race-card align-items-center">

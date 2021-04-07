@@ -9,37 +9,40 @@ import { Link } from "react-router-dom";
 
 function Dog() {
 	return (
-		<Container
-			fluid
-			className="dog d-flex flex-column justify-content-center align-items-center"
-		>
+		<Container fluid className="dog justify-content-center align-items-center">
 			{/* HEADER */}
-			<Row style={{ width: "500px" }}>
-				<Link to="landing">
-					<Col xs={10} md lg={6}>
+			<Row >
+				<Col className="justify-content-start mt-3">
+					<Link to="landing">
 						<BsArrowLeftShort
-							size={30}
+							size={40}
 							className="arrow"
 							alt="arrow"
 						/>
-					</Col>
-				</Link>
+					</Link>
+				</Col>
 			</Row>
 
 			{/* PET PICTURE + NAME */}
-			<Row className="d-flex flex-column align-items-center mt-4">
-				<Image className="toby" src={toby} alt="toby" />
-				<p className="toby-name mb-0 mt-3">Toby</p>
+			<Row >
+				<Col xs md lg={12} className="d-flex flex-column justify-content-center align-items-center" >
+					<Image className="toby" src={toby} alt="toby" />
+					<p className="toby-name mb-0 mt-3">Toby</p>
+				</Col>
 			</Row>
 
 			{/* PET SUMMARY */}
 			<Row className="mt-4">
-				<DogSummary />
+				<Col>
+					<DogSummary />
+				</Col>
 			</Row>
 
 			{/* MEDICAL RESUME */}
-			<Row>
+			<Row className="d-flex justify-content-center mt-4">
+				<Col xs md lg={5} className="d-flex justify-content-center align-items-center">
 				<DogMedical />
+				</Col>
 			</Row>
 		</Container>
 	);
