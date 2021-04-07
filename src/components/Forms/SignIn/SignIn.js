@@ -2,7 +2,7 @@ import { Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import app from "../../../config/firebase";
-import "../SignIn/signIn.css"
+import "../SignIn/SignIn.css"
 
 export default function SignIn() {
 	const [alert, setAlert] = useState(false);
@@ -42,7 +42,7 @@ export default function SignIn() {
 				<Form.Group controlId="password">
 					<Form.Control type="password" placeholder="Password"></Form.Control>
 				</Form.Group>
-				<Link to="/landing">
+				
 					<Button
 						type="submit"
 						style={{ borderRadius: "10px" }}
@@ -51,7 +51,7 @@ export default function SignIn() {
 					>
 						Sign in
 					</Button>
-				</Link>
+
 				<Form.Text style={{ fontFamily:'Gilroy' , fontSize: "1rem" }} className=" my-5 text-center">
 					Already have an account?
 					<Link to="/login" className="login-link"> Log In</Link>

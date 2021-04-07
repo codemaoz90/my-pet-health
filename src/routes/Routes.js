@@ -48,17 +48,18 @@ function Routes() {
 				<Route path="/signin">
 					<SignIn/>
 				</Route>
-				
+
 				<Route path="/dog">
 					<Dog />
 				</Route>
+
 				<Route path="/cat">
 					<Cat />
 				</Route>
 				<Route path="/medical">
 					<MedicalRecord />
 				</Route>
-				<Route path="/detail">
+				<Route path="/details">
 					<DetailedInformation />
 				</Route>
 				<Route path="/schedule">
