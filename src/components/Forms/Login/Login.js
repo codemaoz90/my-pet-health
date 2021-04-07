@@ -30,29 +30,47 @@ export default function Login({ controlId }) {
 		<>
 			<Form variant="mb-5" className="form" onSubmit={(e) => onSubmit(e)}>
 				<Form.Group controlId={`${controlId}_email`}>
-					<Form.Control type="email" placeholder="Email" />
+					<Form.Control
+						type="email"
+						placeholder="Email"
+						style={{ fontFamily: "Gilroy, serif" }}
+					/>
 				</Form.Group>
 
 				<Form.Group controlId={`${controlId}_password`}>
-					<Form.Control type="password" placeholder="Password" />
+					<Form.Control
+						type="password"
+						placeholder="Password"
+						style={{ fontFamily: "Gilroy, serif" }}
+					/>
 				</Form.Group>
-					<Link style={{textDecoration:"none"}}to="/landing">
-						<Button
-							className={`${
-								controlId === "user" ? "btnUser" : "btnProf"
-							} `}
-							variant="primary radius "
-							size="lg"
-							block
-							type="submit"
-						>
-							Log in
-						</Button>
-					</Link>
-				<p className="font-weight-bold  my-5 text-center">
+				<Link style={{ textDecoration: "none" }} to="/landing">
+					<Button
+						className={`${
+							controlId === "user" ? "btnUser" : "btnProf"
+						} `}
+						variant="primary radius "
+						size="lg"
+						block
+						type="submit"
+						style={{
+							fontFamily: "Gilroy",
+							fontWeight: "900",
+						}}
+					>
+						Log in
+					</Button>
+				</Link>
+				<p
+					className="font-weight-bold  my-5 text-center"
+					style={{ fontFamily: "Gilroy, serif" }}
+				>
 					Forgot your password?
 				</p>
-				<p className=" text-center ">
+				<p
+					className=" text-center "
+					style={{ fontFamily: "Gilroy, serif" }}
+				>
 					Already member?
 					<Link style={colorB} className="ml-2" to="/register">
 						Create Account
