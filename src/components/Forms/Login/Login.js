@@ -36,18 +36,19 @@ export default function Login({ controlId }) {
 				<Form.Group controlId={`${controlId}_password`}>
 					<Form.Control type="password" placeholder="Password" />
 				</Form.Group>
-
-				<Button
-					className={`${
-						controlId === "user" ? "btnUser" : "btnProf"
-					} `}
-					variant="primary radius "
-					size="lg"
-					block
-					type="submit"
-				>
-					Log in
-				</Button>
+					<Link style={{textDecoration:"none"}}to="/landing">
+						<Button
+							className={`${
+								controlId === "user" ? "btnUser" : "btnProf"
+							} `}
+							variant="primary radius "
+							size="lg"
+							block
+							type="submit"
+						>
+							Log in
+						</Button>
+					</Link>
 				<p className="font-weight-bold  my-5 text-center">
 					Forgot your password?
 				</p>

@@ -13,6 +13,7 @@ import InfoHealth from "../pages/Information/InfoHealth";
 import InfoGrooming from "../pages/Information/InfoGrooming";
 import InfoAlerts from "../pages/Information/InfoAlerts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SignIn from "../components/Forms/SignIn/SignIn";
 
 function Routes() {
 	return (
@@ -43,6 +44,11 @@ function Routes() {
 				<Route path="/login">
 					<Welcome />
 				</Route>
+
+				<Route path="/signin">
+					<SignIn/>
+				</Route>
+				
 				<Route path="/dog">
 					<Dog />
 				</Route>

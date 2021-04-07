@@ -2,6 +2,10 @@
 	--bgcolor: #fbe2b9;
 }
 
+.form{
+	font-family: 'Gilroy', sans-serif;
+}
+
 .tab-content {
 	width: 400px;
 }
@@ -24,9 +28,13 @@
 	background-color: var(--bgcolor);
 	border-radius: 10px;
 }
+
 .form .btnUser:hover {
-	background: var(--bgcolor);
+	background-color: #ffff ; 
+	color: var(--bgcolor);
+	border-color: var(--bgcolor);
 }
+
 .form .btnUser:active {
 	border: none;
 	outline: 0;
@@ -35,20 +43,24 @@
 }
 .form .btnUser:focus {
 	box-shadow: none !important;
-	color: black;
-	background-color: var(--bgcolor);
+	background-color: #ffff ; 
+	color: var(--bgcolor);	
 }
+
+
 .form .form-control {
-	background-color: #e3e3e3;
+	background-color: #F2F2F2 ;
 	padding: 1.3em;
 	border-radius: 10px;
+	border-color: #F2F2F2 ;
+	color:#9E9E9E !important;
 }
 
 .form-control:focus {
 	box-shadow: none !important;
 	border: none !important;
 	border-color: none !important;
-	background-color: #e3e3e3 !important;
+	background-color: #F2F2F2!important;
 }
 
 /*  Nav tabs */
@@ -75,8 +87,11 @@
 	background-color: #a5d4fb;
 }
 .form .btnProf:hover {
-	background: #a5d4fb;
+	background-color: #ffff !important; 
+	color:#a5d4fb;
+	border-color: #a5d4fb;
 }
+
 .form .btnProf:active {
 	border: none;
 	outline: 0;

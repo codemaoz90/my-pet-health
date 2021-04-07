@@ -25,12 +25,6 @@ function InfoHealth() {
 						/>
 					</Link>
 				</Col>
-
-				<Col className="text-right">
-					<Link to="landing" className="link">
-						<p className="skip mb-0">SKIP</p>
-					</Link>
-				</Col>
 			</Row>
 
 			<Row>
@@ -54,7 +48,7 @@ function InfoHealth() {
 
 			<Row className="mt-5">
 				<Col>
-					<Link to="landing">
+					<Link to="login">
 						<Button className="btn-info">Get Started</Button>
 					</Link>
 				</Col>

@@ -5,6 +5,8 @@ import { SidebarData } from "./SidebarData";
 import avatar from "../../assets/img/james.png";
 import "./NavBar.css";
 import { AuthContext } from "../../context/Auth";
+import {Link} from "react-router-dom"
+
 function NavBar(props) {
 	// Obtain the user from AuthContext Provider.
 	const user = useContext(AuthContext);
@@ -22,7 +24,10 @@ function NavBar(props) {
 						onClick={showSidebar}
 					/>
 				) : (
-					<FaIcons.FaBars onClick={showSidebar} />
+					<img
+						style={{ borderRadius: "50%", width: "70px" }}
+						src={avatar} onClick={showSidebar}
+					/>
 				)}
 			</div>
 			<div className={`profile ${!sidebar ? "hidden" : ""}`}>
@@ -32,8 +37,8 @@ function NavBar(props) {
 						src={avatar}
 					/>
 				</div>
-				<span>James</span>
-				<p style={{ fontSize: "1rem", fontWeight: "100" }}>
+				<span style={{ fontFamily:"Gilroy", fontWeight:"800"}}>James</span>
+				<p style={{ fontFamily:"Gilroy",fontSize: "1rem", fontWeight: "500" }}>
 					Change profile photo
 				</p>
 			</div>
@@ -41,7 +46,7 @@ function NavBar(props) {
 				{SidebarData.map((item, index) => {
 					return (
 						<div key={index} className={item.cname}>
-							<a href="">
+							<a style={{ fontFamily:"Gilroy"}} href="">
 								{item.title}
 								{item.icon}
 							</a>
@@ -50,10 +55,12 @@ function NavBar(props) {
 				})}
 			</div>
 			<div className="sideBarBtn ">
-				<button className={` btn-logout ${!sidebar ? "hidden" : ""} `}>
-					<span className="mr-2">Log out</span>
-					<FaIcons.FaSignOutAlt />
-				</button>
+				<Link to="/login">
+					<button className={` btn-logout ${!sidebar ? "hidden" : ""} `}>
+						<span className="mr-2" style={{ fontFamily:"Gilroy"}}>Log out</span>
+						<FaIcons.FaSignOutAlt />
+					</button>
+				</Link>
 			</div>
 		</nav>
 	);

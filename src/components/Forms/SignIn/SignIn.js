@@ -2,6 +2,7 @@ import { Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import app from "../../../config/firebase";
+import "../SignIn/signIn.css"
 
 export default function SignIn() {
 	const [alert, setAlert] = useState(false);
@@ -31,7 +32,7 @@ export default function SignIn() {
 			)}
 			<h1 className="my-3">Create account</h1>
 			<p className="my-3 font-weight-bold">Sign in your account</p>
-			<Form className="w-50 mt-5" onSubmit={(e) => handleSubmit(e)}>
+			<Form className="sign-in w-50 mt-5" onSubmit={(e) => handleSubmit(e)}>
 				<Form.Group controlId="name">
 					<Form.Control type="text" placeholder="Name"></Form.Control>
 				</Form.Group>
@@ -41,17 +42,19 @@ export default function SignIn() {
 				<Form.Group controlId="password">
 					<Form.Control type="password" placeholder="Password"></Form.Control>
 				</Form.Group>
-				<Button
-					type="submit"
-					style={{ borderRadius: "10px" }}
-					className="w-100"
-					size="lg"
-				>
-					Sign in
-				</Button>
-				<Form.Text style={{ fontSize: "1rem" }} className=" my-5 text-center">
+				<Link to="/landing">
+					<Button
+						type="submit"
+						style={{ borderRadius: "10px" }}
+						className="btn-sign w-100"
+						size="lg"
+					>
+						Sign in
+					</Button>
+				</Link>
+				<Form.Text style={{ fontFamily:'Gilroy' , fontSize: "1rem" }} className=" my-5 text-center">
 					Already have an account?
-					<Link to="/"> Log In </Link>
+					<Link to="/login" className="login-link"> Log In</Link>
 				</Form.Text>
 			</Form>
 		</>

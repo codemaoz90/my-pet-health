@@ -1,0 +1,39 @@
+.sign-in{
+    font-family: 'Gilroy', sans-serif;
+}
+
+.name,.email,.password{
+    color: #b9b9b9 !important;
+    background: #DDDDDD !important;
+}
+
+.btn-sign{
+    background: #DDDDDD !important;
+    color: #000 !important;
+    font-weight: 800;
+    font-size: 1rem;
+    border-color:#DDDDDD !important;
+}
+
+.btn-sign:hover{
+    background: #fff !important;
+    color: #b9b9b9 !important;
+    font-weight: 800;
+    font-size: 1rem;
+    border-color:#DDDDDD !important;
+}
+
+.btn-sign:focus, 
+.btn-sign:active:focus,
+.btn-sign.active:focus{
+    outline: none !important;
+    box-shadow:none !important;
+    border-color:none !important;
+}
+
+.login-link{
+    text-decoration: none !important;
+    color:#000 !important;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+}
