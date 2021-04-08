@@ -31,10 +31,7 @@ function NavBar() {
 		<nav className={`sideBar ${sidebar ? " menu-active" : "inactive"} `}>
 			<div className="sideBarCloseBtn">
 				{sidebar ? (
-					<AiIcons.AiOutlineClose
-						stroke-width="2em"
-						onClick={showSidebar}
-					/>
+					<AiIcons.AiOutlineClose onClick={showSidebar} />
 				) : (
 					<img
 						style={{ borderRadius: "50%", width: "70px" }}

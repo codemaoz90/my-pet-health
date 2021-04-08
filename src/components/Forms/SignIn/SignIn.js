@@ -1,12 +1,13 @@
 import { Form, Button, Alert } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import app from "../../../config/firebase";
 import "./SignIn.css";
+import { AuthContext } from "../../../context/Auth";
 
 export default function SignIn() {
 	const [alert, setAlert] = useState(false);
-
+	const { currentUser } = useContext(AuthContext);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
@@ -18,10 +19,9 @@ export default function SignIn() {
 			.then((user) => {
 				setAlert(true);
 				setTimeout(() => setAlert(false), 2000);
-				console.log(alert);
 			});
 	};
-
+	console.log(currentUser);
 	return (
 		<>
 			<div className="d-flex flex-column vh-100 vw-100 justify-content-center align-items-center ">
@@ -34,6 +34,7 @@ export default function SignIn() {
 						Usuario creado con exito
 					</Alert>
 				)}
+
 				<h1 className="my-3" style={{ fontFamily: "Gilroy, serif" }}>
 					Create account
 				</h1>

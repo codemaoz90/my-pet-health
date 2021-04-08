@@ -1,18 +1,21 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../context/Auth";
 import { Form, Button } from "react-bootstrap";
 
 import { Link, Redirect } from "react-router-dom";
-import { AuthContext } from "../../../context/Auth";
 import app from "../../../config/firebase";
 import "./Login.css";
 
 export default function Login({ controlId }) {
+	const [loading, setLoading] = useState(false);
+	// Color Button
 	const colorB = {
 		color: controlId === "user" ? "#f4c897 " : "#a5d4fb",
 		fontWeight: "bold",
 		cursor: "pointer",
 	};
 
+	// OnsubmitMethod
 	const onSubmit = (e) => {
 		e.preventDefault();
 		const [email, password] = e.target.elements;
@@ -21,15 +24,16 @@ export default function Login({ controlId }) {
 		app.auth()
 			.signInWithEmailAndPassword(email.value, password.value)
 			.then((user) => {
-				console.log(user.user.email);
+				setLoading(true);
 			})
 			.catch((error) => {
 				console.log(error, "error de autenticacion");
 			});
 	};
 
+	// Validatig if userContext has an user authenticated.
 	const { currentUser } = useContext(AuthContext);
-	if (currentUser) {
+	if (currentUser && loading) {
 		return <Redirect to="/landing" />;
 	}
 	return (
