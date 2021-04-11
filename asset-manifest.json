@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/my-pet-health/static/css/main.c45019af.chunk.css",
+    "main.js": "/my-pet-health/static/js/main.ef7e3a96.chunk.js",
+    "main.js.map": "/my-pet-health/static/js/main.ef7e3a96.chunk.js.map",
+    "runtime-main.js": "/my-pet-health/static/js/runtime-main.454e8179.js",
+    "runtime-main.js.map": "/my-pet-health/static/js/runtime-main.454e8179.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/my-pet-health/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.7cc05e83.chunk.js": "/my-pet-health/static/js/2.7cc05e83.chunk.js",
+    "static/js/2.7cc05e83.chunk.js.map": "/my-pet-health/static/js/2.7cc05e83.chunk.js.map",
+    "index.html": "/my-pet-health/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/my-pet-health/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.c45019af.chunk.css.map": "/my-pet-health/static/css/main.c45019af.chunk.css.map",
+    "static/js/2.7cc05e83.chunk.js.LICENSE.txt": "/my-pet-health/static/js/2.7cc05e83.chunk.js.LICENSE.txt",
+    "static/media/glass.92c86953.svg": "/my-pet-health/static/media/glass.92c86953.svg",
+    "static/media/info_bird.0b3db6a0.png": "/my-pet-health/static/media/info_bird.0b3db6a0.png",
+    "static/media/info_cat.d09e1d73.png": "/my-pet-health/static/media/info_cat.d09e1d73.png",
+    "static/media/james.4020be81.png": "/my-pet-health/static/media/james.4020be81.png",
+    "static/media/kitty-profile.3816dd6e.png": "/my-pet-health/static/media/kitty-profile.3816dd6e.png",
+    "static/media/loading.520afc13.gif": "/my-pet-health/static/media/loading.520afc13.gif",
+    "static/media/logo.f491131a.png": "/my-pet-health/static/media/logo.f491131a.png",
+    "static/media/toby-profile.702295bf.png": "/my-pet-health/static/media/toby-profile.702295bf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.454e8179.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.7cc05e83.chunk.js",
+    "static/css/main.c45019af.chunk.css",
+    "static/js/main.ef7e3a96.chunk.js"
+  ]
+}
